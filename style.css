@@ -1,0 +1,101 @@
+@media screen and (max-width: 412px) and (orientation: portrait) {
+
+/***************** BODY *****************/
+    body {
+        background-color: #000;
+        color: #0FB600;
+        font-family: 'VT323', monospace;
+        letter-spacing: 0.1rem; /* augmentation de l'espace inter-caractère pour faciliter la lecture */
+        display: grid;
+        height: 100%;
+        margin: 0;
+        grid-template-columns: repeat(1fr,12) ;
+        grid-template-rows: repeat(auto,3);
+        grid-template-areas: 
+        "aside section section section section section section section section section section section"
+        "aside section section section section section section section section section section section"
+        "aside network network network network network network network network network network network";
+    }
+
+    .yellow {
+        color: #DCEE07;
+    }
+    
+    .red {
+        color: #B60B00;
+    }
+
+/***************** ARTICLES *****************/
+    article, h1{
+        margin: 2vh 2vw 2vh 2vw;
+        padding: 0.5vh 1vw 0.5vh 1vw;
+        border: 1px dashed #0FB600;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    h1 {
+        margin-top: 1vh;
+    }
+
+    section {
+        grid-area: section;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        flex-basis: 1;
+    }
+
+/****************** FOOTER ******************/
+    footer {
+        grid-area: network;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding: 0.5vh 10vw 0vh 10vw;
+    }
+
+/****************** ASIDE *******************/
+    aside {
+        grid-area: aside;
+        border-left: 1px solid #0FB600;
+        border-right: 1px solid #0FB600;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        padding-right: 0.10rem;
+        padding-left: 0.10rem;
+    }
+
+    .navslideCheckbox {
+        border: none;
+        background-color: #000;
+    }
+
+    .navslideCheckbox > img {
+        height: 2rem;
+    }
+
+    .navslideContent {
+        display : none;
+    }
+
+    .navslideContent :active {
+        border-left : #DCEE07;
+        border-right: #DCEE07;
+    }
+
+    .navslideContent :checked {
+
+    }
+
+/****************** ANIMATIONS *******************/
+
+@keyframes navslideOpening {
+    0% ()
+
+    50% ()
+
+    100% ()
+}
+}
