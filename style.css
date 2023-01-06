@@ -9,12 +9,9 @@
         display: grid;
         height: 100%;
         margin: 0;
-        grid-template-columns: repeat(1fr,12) ;
-        grid-template-rows: repeat(auto,3);
-        grid-template-areas: 
-        "aside section section section section section section section section section section section"
-        "aside section section section section section section section section section section section"
-        "aside network network network network network network network network network network network";
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: flex-start;
     }
 
     .yellow {
@@ -27,8 +24,8 @@
 
 /***************** ARTICLES *****************/
     article, h1{
-        margin: 2vh 2vw 2vh 2vw;
-        padding: 0.5vh 1vw 0.5vh 1vw;
+        margin: 2vh 2vw 1.75vh 2vw;
+        padding: 0.5vh 1vw 0.25vh 1vw;
         border: 1px dashed #0FB600;
         border-radius: 5px;
         text-align: center;
