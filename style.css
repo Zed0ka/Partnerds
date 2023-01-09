@@ -6,7 +6,6 @@
         color: #0FB600;
         font-family: 'VT323', monospace;
         letter-spacing: 0.1rem; /* augmentation de l'espace inter-caractère pour faciliter la lecture */
-        display: grid;
         height: 100%;
         margin: 0;
         display: flex;
